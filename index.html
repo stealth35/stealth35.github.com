@@ -1,6 +1,12 @@
 ---
 layout: default
-title: stealth35 labs
+title: S Labs
 ---
 
-Welcome!
+{% for post in site.posts limit:5 %}
+<article>
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	{{ post.content }}
+	<p><em>Posted on {{ post.date | date_to_long_string }}.</em></p>
+</article>
+{% endfor %}
