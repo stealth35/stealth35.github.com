@@ -5,23 +5,21 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>GitHub Rebase</title>
- <link href="http://stealth35.github.com/atom.xml" rel="self"/>
- <link href="http://stealth35.github.com/"/>
+ <link href="{{ site.url }}/atom.xml" rel="self"/>
+ <link href="{{ site.url }}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://stealth35.github.com/</id>
+ <id>{{ site.url }}</id>
  <author>
    <name>GitHub</name>
    <email>support@github.com</email>
- </author>
- 
+ </author> 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://stealth35.github.com{{ post.url }}"/>
+   <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://stealth35.github.com{{ post.id }}</id>
+   <id>{{ site.url }}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
- {% endfor %}
- 
+ {% endfor %} 
 </feed>

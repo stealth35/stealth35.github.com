@@ -2,11 +2,12 @@
 layout: default
 title: Labs
 ---
-
+<script src="http://connect.facebook.net/en_US/all.js#&amp;xfbml=1"></script>
 {% for post in site.posts limit:5 %}
 <article>
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	{{ post.content }}
 	<p class="date"><em>Posted on {{ post.date | date_to_long_string }}.</em></p>
+	<fb:comments href="{{ site.url }}{{ post.url }}" num_posts="1" width="500"></fb:comments>
 </article>
 {% endfor %}
