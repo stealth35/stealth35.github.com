@@ -8,6 +8,6 @@ title: Labs
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	{{ post.content }}
 	<p class="date"><em>Posted on {{ post.date | date_to_long_string }}.</em></p>
-	<fb:comments href="{{ site.url }}{{ post.url }}" num_posts="1" width="500"></fb:comments>
+	<fb:comments href="{{ site.url }}{{ post.url }}" num_posts="10" width="500"></fb:comments>
 </article>
 {% endfor %}
