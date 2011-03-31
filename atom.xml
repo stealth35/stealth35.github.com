@@ -5,8 +5,8 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>GitHub Rebase</title>
- <link href="http://rebase.github.com/atom.xml" rel="self"/>
- <link href="http://rebase.github.com/"/>
+ <link href="http://stealth35.github.com/atom.xml" rel="self"/>
+ <link href="http://stealth35.github.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://stealth35.github.com/</id>
  <author>
