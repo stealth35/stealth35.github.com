@@ -3,18 +3,16 @@ layout: default
 title: Downloads
 ---
 
+<ul id="list"></ul>
 <script type="text/javascript">
 var show = function (response) {      
     if(response.meta.status === 200) {
         var data = response.data;
-        var content = document.getElementById('content');
-
+        var list = document.getElementById('list');
         for(var i = 0; i < data.length; ++i) {
             var file = data[i];
-            content.innerHTML = content.innerHTML
-            + '<ul id="downloads-list">'
-            + '<li><a href="' + file.html_url + '">' + file.name + '</a></li>'
-            + '</ul>';
+            list.innerHTML = list.innerHTML
+            + '<li><a href="' + file.html_url + '">' + file.name + '</a></li>';
         }        
     }
 };

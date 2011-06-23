@@ -43,6 +43,10 @@ article h2{
 	letter-spacing:0.25em;
 }
 
+#list li{
+	padding:8px;
+}
+
 header {
 	padding:10px 0 0;
 }
