@@ -18,6 +18,10 @@ a {
 	text-decoration:none; 	
 }
 
+ul {
+	list-style-type:square;
+}
+
 a:hover {
 	color:#00CCFF;
 }
@@ -48,4 +52,5 @@ footer {
 	letter-spacing:0.25em;
 	text-align:center;
 	padding:1px 0;
+	margin-top:50px;
 }

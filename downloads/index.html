@@ -1,0 +1,22 @@
+---
+layout: default
+title: Downloads
+---
+
+<script type="text/javascript">
+var show = function (response) {      
+    if(response.meta.status === 200) {
+        var data = response.data;
+        var content = document.getElementById('content');
+
+        for(var i = 0; i < data.length; ++i) {
+            var file = data[i];
+            content.innerHTML = content.innerHTML
+            + '<ul id="downloads-list">'
+            + '<li><a href="' + file.html_url + '">' + file.name + '</a></li>'
+            + '</ul>';
+        }        
+    }
+};
+</script>
+<script type="text/javascript" src="https://api.github.com/repos/stealth35/stealth35.github.com/downloads?callback=show"></script>
