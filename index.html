@@ -5,19 +5,19 @@ title: Labs
 
 {% for post in site.posts limit:5 %}
 <article>
-	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	{{ post.content }}
-	<p class="date"><em>Posted on {{ post.date | date_to_long_string }}.</em></p>
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'stealth35';
-	    var disqus_identifier = '{{ post.url }}';
-	    var disqus_url = '{{ site.url }}{{ post.url }}';
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.content }}
+    <p class="date"><em>Posted on {{ post.date | date_to_long_string }}.</em></p>
+    <!-- <div id="disqus_thread"></div>-->
+    <script type="text/javascript">
+        var disqus_shortname = 'stealth35';
+        var disqus_identifier = '{{ post.url }}';
+        var disqus_url = '{{ site.url }}{{ post.url }}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
 </article>
 {% endfor %}
