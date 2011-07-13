@@ -4,12 +4,12 @@ title: Downloads
 ---
 
 <ul id="list"></ul>
-        <script type="text/javascript">
-        $.getJSON('https://api.github.com/repos/stealth35/stealth35.github.com/downloads?callback=?',function (response){
-            if (response.meta.status === 200) {
-                $.each(response.data, function (id, file) {
-                    $('#list').append($(document.createElement('li')).append($(document.createElement('a')).attr({href: file.html_url}).text(file.name)));
-                });
-            }
-        });
-        </script>
+            <script type="text/javascript">
+            $.getJSON('https://api.github.com/repos/stealth35/stealth35.github.com/downloads?callback=?',function (response){
+                if (response.meta.status === 200) {
+                    $.each(response.data, function (id, file) {
+                        $('#list').append($(document.createElement('li')).append($(document.createElement('a')).attr({href: file.html_url}).text(file.name)));
+                    });
+                }
+            });
+            </script>
