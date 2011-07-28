@@ -49,6 +49,16 @@ article h2{
 #list li{
 	padding:8px;
 }
+.highlight {
+    background-color: #F8F8F8;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	font-size: 13px;
+	line-height: 19px;
+	overflow: auto;
+	padding: 0 10px;
+	margin:10px 0;
+}
 
 header {
 	padding:10px 0 0;
