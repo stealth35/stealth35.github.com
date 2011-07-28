@@ -5,5 +5,7 @@ title: Install PEAR on Mac OSX Lion
 
 {% highlight bash %}
 php /usr/lib/php/install-pear-nozlib.phar
+pear config-set php_ini /private/etc/php.ini
+pecl config-set php_ini /private/etc/php.ini
 sudo pear upgrade-all
 {% endhighlight %}
