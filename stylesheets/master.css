@@ -28,6 +28,9 @@ a:hover {
 h1 {
 	margin:0;
 }
+hr {
+	border:1px solid #C0C0C0;
+}
 article {
 	font-family:Georgia,"Bitstream Charter",serif;
 	color:#333333;

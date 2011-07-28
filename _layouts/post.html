@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article id="post">
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    {{ content }}
+    <p class="date"><em>Posted on {{ page.date | date_to_long_string }}.</em></p>
+	{% if page.previous %} 
+	<div id="previous">prev : <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+	{% endif %} 
+
+	{% if page.next %} 
+	<div id="next">next : <a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+	{% endif %}
+
+	<hr />
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'stealth35';
+	    var disqus_identifier = '{{ post.url }}';
+	    var disqus_url = '{{ site.url }}{{ post.url }}';
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+</article>
