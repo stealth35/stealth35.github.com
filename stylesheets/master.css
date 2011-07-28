@@ -1,4 +1,18 @@
 @CHARSET "UTF-8";
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+/**
+ * YUI Reset
+ * @module reset
+ * @namespace
+ * @requires 
+ */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
 html, article h2 {
 	font-family:"Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
 }
@@ -8,7 +22,6 @@ body {
 }
 #content {
 	margin:0 auto;
-	margin-top:50px;
 	width:940px;
 	background-color:#FFFFFF;        	
 	padding:0 20px;
@@ -26,7 +39,8 @@ a:hover {
 	color:#00CCFF;
 }
 h1 {
-	margin:0;
+	font-weight:bold;
+	font-size:32px;
 }
 hr {
 	border:1px solid #C0C0C0;
@@ -38,6 +52,9 @@ article {
 article h2{
 	font-variant: small-caps;
 	letter-spacing:0.25em;
+	font-weight:bold;
+	font-size:24px;
+	margin:20px 0;
 }
 .date {
 	color:#FB9500;
@@ -56,7 +73,7 @@ article h2{
 	font-size: 13px;
 	line-height: 19px;
 	overflow: auto;
-	padding: 0 10px;
+	padding: 10px 10px;
 	margin:10px 0;
 }
 
