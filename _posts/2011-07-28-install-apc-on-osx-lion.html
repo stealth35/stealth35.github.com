@@ -1,0 +1,21 @@
+---
+layout: default
+title: Install APC on Mac OSX Lion
+---
+
+<a href="/2011/07/27/install-pear-on-osx-lion.html">First install PEAR</a>
+
+{% highlight bash %}
+curl -O http://freefr.dl.sourceforge.net/project/pcre/pcre/8.02/pcre-8.02.tar.gz
+tar xvf pcre-8.02.tar.gz
+sudo cp pcre-8.02/pcre*.h /usr/include
+rm -r pcre-8.02*
+
+pecl config-set php_ini /private/etc/php.ini
+
+export MACOSX_DEPLOYMENT_TARGET=10.7
+export CFLAGS="-arch x86_64"
+export CXXFLAGS="-arch x86_64"
+
+sudo pecl install apc
+{% endhighlight %}
