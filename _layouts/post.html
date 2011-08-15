@@ -4,16 +4,17 @@ layout: default
 
 <article id="post">
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+	<p class="date"><em>Posted on {{ page.date | date_to_long_string }}.</em></p>
     {{ content }}
-    <p class="date"><em>Posted on {{ page.date | date_to_long_string }}.</em></p>
-	{% if page.previous %} 
-	<div id="previous">prev : <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
-	{% endif %} 
+	<div class="footer">    	
+		{% if page.previous %} 
+		<div id="previous">prev : <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+		{% endif %} 
 
-	{% if page.next %} 
-	<div id="next">next : <a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
-	{% endif %}
-
+		{% if page.next %} 
+		<div id="next">next : <a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+		{% endif %}
+		<div class="footer">
 	<hr />
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">

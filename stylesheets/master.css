@@ -57,13 +57,20 @@ article h2{
 	letter-spacing:0.25em;
 	font-weight:bold;
 	font-size:24px;
-	margin:20px 0;
+	margin-top:20px;
 }
-.date {
+
+article .footer {
+	margin-top:25px;
+	font-size:12px;
+}
+
+article .date {
 	color:#FB9500;
 	font-size:12px;
 	font-variant: small-caps;
 	letter-spacing:0.25em;
+	margin-bottom:20px;
 }
 
 #list li{
@@ -87,6 +94,7 @@ header {
 header #menu{
     float:right;
 }
+
 footer {
 	border-top:4px solid #000000;
 	font-size:10px;
