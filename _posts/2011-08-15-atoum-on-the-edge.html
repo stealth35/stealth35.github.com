@@ -9,7 +9,7 @@ Distribute in a phar archive you can easily insert it in your project.</p>
 <p>A simple to make the phar form github's source and test it :</p>
 
 {% highlight bash %}
-git://github.com/mageekguy/atoum.git
+git clone git://github.com/mageekguy/atoum.git
 php -dphar.readonly=0 atoum/scripts/phar/generator.php -d ./
 php mageekguy.atoum.phar -d atoum/tests/units
 {% endhighlight %}
