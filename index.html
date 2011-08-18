@@ -8,5 +8,17 @@ title: stealth35 GitHub Page
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="date"><em>Posted on {{ post.date | date_to_long_string }}.</em></p>
     {{ post.content }}
+    <div class="comment_link"><a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
 </article>
 {% endfor %}
+
+<script type="text/javascript">
+    var disqus_shortname = 'stealth35'; 
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
