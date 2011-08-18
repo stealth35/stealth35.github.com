@@ -21,6 +21,12 @@ html, body, article h2 {
 body {           
     font-size:16px;
 }
+pre {
+	font-size:13px;
+}
+strong {
+	font-weight:bold;
+}
 #content {
     margin:0 auto;
     width:940px;
