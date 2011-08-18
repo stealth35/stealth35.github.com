@@ -3,7 +3,7 @@ server: true
 url: http://stealth35.github.com
 menu_items: 
     - { title: Home,      link: / }
-    - { title: Downloads, link: /downloads }
+    - { title: Downloads, link: https://github.com/stealth35/stealth35.github.com/downloads }
     - { title: PEAR,      link: /pear }
     - { title: GitHub,    link: https://github.com/stealth35 }
     - { title: Tweeter,   link: http://twitter.com/stealth35 }

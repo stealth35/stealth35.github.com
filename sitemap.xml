@@ -2,7 +2,6 @@
 layout: nil
 site_pages:
   - /
-  - /downloads/
   - /pear/
 ---
 <?xml version="1.0" encoding="UTF-8"?>
