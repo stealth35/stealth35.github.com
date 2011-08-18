@@ -1,4 +1,9 @@
 auto: true
 server: true
 url: http://stealth35.github.com
-title: Labs
+menu_items: 
+    - { title: Home,      link: / }
+    - { title: Downloads, link: /downloads }
+    - { title: PEAR,      link: /pear }
+    - { title: GitHub,    link: https://github.com/stealth35 }
+    - { title: Tweeter,   link: http://twitter.com/stealth35 }
