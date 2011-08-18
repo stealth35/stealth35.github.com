@@ -8,10 +8,10 @@ layout: default
     {{ content }}
     <div class="footer">        
     {% if page.previous %} 
-        <div id="previous">prev : <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+        <div id="previous"><a href="{{ page.previous.url }}">← {{ page.previous.title }}</a></div>
     {% endif %}
     {% if page.next %} 
-        <div id="next">next : <a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+        <div id="next"><a href="{{ page.next.url }}">{{ page.next.title }} →</a></div>
     {% endif %}
     </div>
     <hr />

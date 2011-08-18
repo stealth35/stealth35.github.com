@@ -67,7 +67,16 @@ article h2{
 
 article .footer {
     margin-top:25px;
-    font-size:12px;
+    padding-bottom:15px;
+    font-size:13px;
+}
+
+article #previous{
+	float:left;
+}
+
+article #next{
+	float:right;
 }
 
 article .date {
