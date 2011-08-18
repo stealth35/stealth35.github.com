@@ -4,27 +4,26 @@ layout: default
 
 <article id="post">
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-	<p class="date"><em>Posted on {{ page.date | date_to_long_string }}.</em></p>
+    <p class="date"><em>Posted on {{ page.date | date_to_long_string }}.</em></p>
     {{ content }}
-	<div class="footer">    	
-		{% if page.previous %} 
-		<div id="previous">prev : <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
-		{% endif %} 
-
-		{% if page.next %} 
-		<div id="next">next : <a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
-		{% endif %}
-	</div>
-	<hr />
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'stealth35';
-	    var disqus_identifier = '{{ page.url }}';
-	    var disqus_url = '{{ site.url }}{{ page.url }}';
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
+    <div class="footer">        
+    {% if page.previous %} 
+        <div id="previous">prev : <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+    {% endif %}
+    {% if page.next %} 
+        <div id="next">next : <a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+    {% endif %}
+    </div>
+    <hr />
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'stealth35';
+        var disqus_identifier = '{{ page.url }}';
+        var disqus_url = '{{ site.url }}{{ page.url }}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
 </article>
