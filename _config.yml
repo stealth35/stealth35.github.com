@@ -1,6 +1,7 @@
 auto: true
 server: true
 url: http://stealth35.github.com
+paginate: 3
 menu_items: 
     - { title: Home,      link: / }
     - { title: Downloads, link: https://github.com/stealth35/stealth35.github.com/downloads }
