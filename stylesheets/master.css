@@ -132,6 +132,11 @@ footer {
     font-size:10px;
     letter-spacing:0.25em;
     text-align:center;
-    padding:1px 0;
-    margin-top:12px;
+    padding:5px 0;
+    margin-top:12px;    
+}
+
+footer #image-licence {
+    position:relative;
+    top:4px;
 }
