@@ -1,6 +1,6 @@
 auto: true
 server: true
-url: http://stealth35.github.com
+url: http://blog.stealth35.com
 paginate: 3
 menu_items: 
     - { title: Home,      link: / }
