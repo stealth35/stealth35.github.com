@@ -8,7 +8,7 @@ title: stealth35 GitHub Page
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="date"><em>Posted on {{ post.date | date_to_long_string }}.</em></p>
     {{ post.content }}
-    <div class="comment_link"><a href="{{ post.url }}#disqus_thread">Comments</a>
+    <div class="comment_link"><a href="{{ post.url }}">Comments</a></div>
 </article>
 {% endfor %}
 
