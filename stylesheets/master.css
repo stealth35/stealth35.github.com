@@ -50,6 +50,10 @@ h1 {
     font-weight:bold;
     font-size:32px;
 }
+h2 {
+    font-weight:bold;
+    font-size:24px;
+}
 hr {
     border:1px solid #C0C0C0;
 }
@@ -87,6 +91,19 @@ article .date {
     font-variant: small-caps;
     letter-spacing:0.25em;
     margin-bottom:20px;
+}
+#resume h1{
+    text-align:center;
+}
+
+#resume img{
+    display:block;
+    margin: 0 auto;
+}
+
+#resume {
+    margin:0 auto;
+    width:560px
 }
 
 #list li{

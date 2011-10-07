@@ -8,3 +8,4 @@ menu_items:
     - { title: PEAR,      link: /pear }
     - { title: GitHub,    link: https://github.com/stealth35 }
     - { title: Tweeter,   link: http://twitter.com/stealth35 }
+    - { title: Résumé,    link: /resume.html }
