@@ -2,7 +2,6 @@
 layout: nil
 site_pages:
   - /
-  - /pear/
   - /resume.html
 ---
 <?xml version="1.0" encoding="UTF-8"?>
