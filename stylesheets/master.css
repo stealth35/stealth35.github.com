@@ -18,11 +18,11 @@ html, body {
 html, body, article h2 {
     font-family:"Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
 }
-body {           
+body {
     font-size:16px;
 }
 pre {
-	font-size:13px;
+    font-size:13px;
 }
 strong {
 	font-weight:bold;
@@ -30,14 +30,13 @@ strong {
 #content {
     margin:0 auto;
     width:940px;
-    background-color:#FFFFFF;            
+    background-color:#FFFFFF; 
     padding:0 20px;
 }
 a {
     color:#00B6F0;
-    text-decoration:none;     
+    text-decoration:none;
 }
-
 li {
     list-style-type:square;
     margin-left:20px;
@@ -57,6 +56,9 @@ h2 {
 hr {
     border:1px solid #C0C0C0;
 }
+em {
+    font-style:italic;
+}
 article {
     font-family:Georgia,"Bitstream Charter",serif;
     color:#333333;
@@ -69,6 +71,7 @@ article h2{
     margin-top:20px;
 }
 article .comment_link{
+    margin-top:15px;
     text-align:center;
 }
 article .footer {
@@ -150,7 +153,7 @@ footer {
     letter-spacing:0.25em;
     text-align:center;
     padding:5px 0;
-    margin-top:12px;    
+    margin-top:12px;
 }
 
 footer #image-licence {
