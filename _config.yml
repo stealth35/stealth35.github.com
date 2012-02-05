@@ -9,3 +9,4 @@ menu_items:
     - { title: GitHub,    link: https://github.com/stealth35 }
     - { title: Tweeter,   link: http://twitter.com/stealth35 }
     - { title: Résumé,    link: /resume.html }
+    - { title: Contact,   link: mailto:stealth35-php@live.fr }
