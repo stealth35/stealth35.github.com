@@ -3,9 +3,11 @@ layout: post
 title: Install PHP 5.3.7 on OS X Lion
 ---
 
-<p>First you need to install <a href="http://www.ijg.org/">libjpeg</a>, <a href="http://www.libpng.org/pub/png/libpng.html">libpng</a> and download/extract the <a href="http://www.hardened-php.net/suhosin/download.html">Suhosin path</a></p>
-<br />
-<p>Install command :</p>
+First you need to install [libjpeg][1], [libpng][2] and download/extract the [Suhosin path][3]
+
+Install command :
+-----------------
+
 {% highlight bash %}
 export MACOSX_DEPLOYMENT_TARGET=10.7
 export CFLAGS="-arch x86_64"
@@ -19,5 +21,12 @@ make
 sudo make install
 {% endhighlight %}
 
-<p>If you want to install <strong>Intl</strong><p>
-<p>First install <strong>ICU 4.6</strong>, add <strong>--enable-intl</strong> in ./configure, open <strong>Makefile</strong> and add <strong>-lstdc++</strong> to <strong>EXTRA_LIBS</strong></p>
+Need __Intl__ ? :
+---------------------------------
+
+Install __ICU 4.6__, add _--enable-intl_ in ./configure, open __Makefile__ and add _-lstdc++_ to __EXTRA_LIBS__
+
+
+[1]: http://www.ijg.org
+[2]: http://www.libpng.org/pub/png/libpng.html
+[3]: http://www.hardened-php.net/suhosin/download.html

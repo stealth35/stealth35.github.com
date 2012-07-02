@@ -3,7 +3,7 @@ layout: post
 title: Install APC on Mac OS X Lion
 ---
 
-First you need to <a href="/2011/07/27/install-pear-on-osx-lion.html">install PEAR</a>, Xcode (and the Command Line Tools) and autoconf (ex : via Brew)
+First you need to [install PEAR][1], Xcode (and the Command Line Tools) and autoconf (ex : via Brew)
 
 {% highlight bash %}
 curl -O http://freefr.dl.sourceforge.net/project/pcre/pcre/8.02/pcre-8.02.tar.gz
@@ -18,3 +18,5 @@ export CXXFLAGS="-arch x86_64"
 
 sudo pecl install apc
 {% endhighlight %}
+
+[1]: /2011/07/27/install-pear-on-osx-lion.html
