@@ -5,7 +5,7 @@ title: First Post
 
 Nouvel herbergeur, nouveau site ;)
 
-{% highlight php %}
-<?php
-echo 'hello';
-{% endhighlight %}
+    {% highlight php %}
+    <?php
+    echo 'hello';
+    {% endhighlight %}
