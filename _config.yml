@@ -3,10 +3,10 @@ server: true
 url: http://blog.stealth35.com
 paginate: 3
 menu_items: 
-    - { title: Home,      link: / }
-    - { title: Downloads, link: https://github.com/stealth35/stealth35.github.com/downloads }
-    - { title: Packagist, link: http://packagist.org/packages/stealth35/ }
-    - { title: GitHub,    link: https://github.com/stealth35 }
-    - { title: Tweeter,   link: http://twitter.com/stealth35 }
-    - { title: Résumé,    link: /resume.html }
-    - { title: Contact,   link: mailto:stealth35-php@live.fr }
+    - { title: Home,      link: "/" }
+    - { title: Downloads, link: "https://github.com/stealth35/stealth35.github.com/downloads" }
+    - { title: Packagist, link: "http://packagist.org/packages/stealth35/" }
+    - { title: GitHub,    link: "https://github.com/stealth35" }
+    - { title: Tweeter,   link: "http://twitter.com/stealth35" }
+    - { title: Résumé,    link: "/resume.html" }
+    - { title: Contact,   link: "mailto:stealth35-php@live.fr" }

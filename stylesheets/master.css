@@ -101,13 +101,18 @@ article .date {
     text-align:center;
 }
 
+#resume p{
+    text-align:justify;
+    margin:20px 0;
+}
+
 #resume img{
     display:block;
     margin: 0 auto;
 }
 
 #resume {
-    margin:0 auto;
+    margin:20px auto;
     width:560px
 }
 
